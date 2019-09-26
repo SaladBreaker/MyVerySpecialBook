@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Learn D3 in 5 minutes</title>
+</head>
+
+<body>
+    <h3></h3>
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+    <!-- <script>
+        d3.select('h3').style('color', 'darkblue');
+        d3.select('h3').style('font-size', '24px');
+    </script>
+
+    <ul></ul>
+-->
+    <svg></svg>
+
+
+    <button id="a">sad s </button>
+    <script>
+        function random_item(items) {
+
+            return items[Math.floor(Math.random() * items.length)];
+
+        }
+
+
+
+        var fruits = ['apple', 'mango', 'banana', 'orange'];
+        d3.select('ul').selectAll('li').data(fruits).enter().append('li').text(function (d) { return d; });
+
+        //Select SVG elementvar
+        svg = d3.select('svg');
+        //Create rectangle element inside SVG.
+        svg.append('rect').attr('x', 50).attr('y', 50).attr('width', 200).attr('height', 100).attr('fill', 'green');
+
+        // var data = [80, 120, 60, 150, 200];
+        // var barHeight = 20;
+        // var bar = d3.select('svg').selectAll('rect').data(data).enter().append('rect').attr('fill', 'green').attr('width', function (d) { return d; }).attr('height', barHeight - 1).attr('transform', function (d, i) { return "translate(0," + i * barHeight + ")"; });
+
+        // ADDD HERE COLORS
+        var shapes_colors = ["green", "red", "blue"]
+        d3.select('button').on('click', function () { d3.select('rect').attr('fill', shapes_colors[Math.floor(Math.random() * shapes_colors.length)]); })
+
+    </script>
+    {{ colors }}
+</body>

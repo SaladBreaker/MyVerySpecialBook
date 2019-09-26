@@ -1,0 +1,22 @@
+Andrei, developerul aplicatiei, ar fi dispus sa impartaseasca know-how-ul si experienta sa cu cineva,
+dar pentru ca are destul de putin timp ar vrea sa fie sigur ca merita sa isi investeasca timpul in asta.
+Asa ca mi-a trimis cerintele pentru o proba in acest sens:
+Să facă un site mic, cu următoarele cerințe:
+
+- bazat pe unul din framework-urile: https://bottlepy.org sau https://github.com/pallets/flask
+
+- pe prima pagină se deseneze, folosind biblioteca https://d3js.org/, câteva figuri geometrice.
+Când se face click pe figuri, să își schimbe culoarea în mod aleator.
+
+- pe o altă pagină să aibă o funcție de upload fișiere, bazată pe https://www.dropzonejs.com/.
+După upload, serverul să nu salveze fișierele (pentru simplitate).
+
+- o bază de date PostgreSQL, cu un sigur tabel, numit „book”, cu trei coloane: „id”, „title”, „author”.
+
+- pe o altă pagină să aibă un formular simplu de adăugare în „book”:
+câmpul „titlu”,
+câmpul „author”,
+buton „submit”
+
+- pe o altă pagină să afișeze, sub formă tabelară (HTML) înregistrările citite din tabela „books”.
+- să pună codul sursă pe github și să instaleze aplicația pe Heroku (platformă gratuită)
