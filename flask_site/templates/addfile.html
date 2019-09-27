@@ -1,0 +1,12 @@
+{% extends "layout.html"%}
+{% block content%}
+<main class="page projects-page">
+    <section class="portfolio-block projects-cards">
+        <form action="/file-upload" class="dropzone gradient">
+            <div class="fallback">
+                <input name="file" type="file" multiple />
+            </div>
+        </form>
+    </section>
+</main>
+{% endblock content%}

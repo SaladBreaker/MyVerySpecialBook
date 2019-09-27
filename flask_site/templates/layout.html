@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Additional resorces added -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>My Very Special Book</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="{{url_for('static',filename='ionicons.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+
+    <!-- d3lib -->
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+
+    <!--  dropzone lib-->
+    <script src="./path/to/dropzone.js"></script>
+
+
+    <script>
+        // You can add HERE COLORS FOR THE SHAPES
+        var shapes_colors = ["#562BA1", "#6D32D2", "#9475C9", "#186298", "#2D89CC", "#50A7E7", "#7BBDEE", "blue", "#B5D3E7", "#96C7EA"]
+    </script>
+</head>
+
+<body>
+    <!-- The navigation bar -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="height: 80px;">
+        <div class="container gradient">
+            <a class="navbar-brand logo" href="{{url_for('home')}}">My very special book</a>
+
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('addfile')}}">
+                            Add a file</a></li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('allbooks')}}">
+                            See all
+                            books</a></li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('addbook')}}">
+                            Add a
+                            book</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    {% block content %}{% endblock %}
+
+
+
+    <!-- The social media bar -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a href="#">Contact me</a></div>
+            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                        class="icon ion-social-instagram-outline"></i></a><a href="#"><i
+                        class="icon ion-social-twitter"></i></a></div>
+        </div>
+    </footer>
+    <!-- Additional resorces added -->
+    <script src="{{url_for('static',filename='jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="{{url_for('static',filename='theme.js')}}"></script>
+</body>
+
+</html>

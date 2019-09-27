@@ -7,4 +7,19 @@ import json
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("test.html")
+    return render_template("home.html")
+
+
+@app.route("/allbooks")
+def allbooks():
+    return render_template("allbooks.html")
+
+
+@app.route("/addbook")
+def addbook():
+    return render_template("addbook.html")
+
+
+@app.route("/addfile")
+def addfile():
+    return render_template("addfile.html")

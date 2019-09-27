@@ -1,4 +1,4 @@
-#!/home/vlad/Documents/Projects/Freelancing/MyVerySpecialBook/.venv/bin/python3
+#!/home/vlad/Documents/Projects/Freelancing/MyVerySpecialBook/.venv/bin/python3.6m
 # -*- coding: utf-8 -*-
 import re
 import sys

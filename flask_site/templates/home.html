@@ -1,0 +1,138 @@
+{% extends "layout.html"%}
+{% block content%}
+
+<main class="page hire-me-page">
+    <section class="portfolio-block hire-me" style="margin: 36px;">
+        <div class="container">
+            <div class="row no-gutters">
+
+                <!--1 First shape  -->
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <center>
+                        <svg id="svg1" class="img-fluid"></svg>
+                    </center>
+                    <script>
+                        svg = d3.select('#svg1')
+                        svg.append('rect').attr('x', 50).attr('y', 10).attr('width', 300).attr('height', 200).attr('fill', shapes_colors[Math.floor(Math.random() * shapes_colors.length)]);
+                        d3.select('rect').on('click', function () { d3.select('rect').attr('fill', shapes_colors[Math.floor(Math.random() * shapes_colors.length)]); })
+                    </script>
+                </div>
+                <!--1 End of the first shape  -->
+
+                <!--2 Second shape  -->
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <center>
+                        <svg id="svg2" class="img-fluid"></svg>
+                    </center>
+                    <script>
+
+                        svg = d3.select('#svg2')
+                        svg.append('circle').attr('cx', 150).attr('cy', 60).attr("r", 50).attr('fill', shapes_colors[Math.floor(Math.random() * shapes_colors.length)])
+                        d3.select('circle').on('click', function () { d3.select('circle').attr('fill', shapes_colors[Math.floor(Math.random() * shapes_colors.length)]); })
+                    </script>
+                </div>
+                <!--2 End of second shape  -->
+
+                <!--3 Third shape  -->
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <center>
+                        <svg id="svg3" class="img-fluid"></svg>
+                    </center>
+
+                    <script>
+
+                        svg = d3.select('#svg3')
+                        svg.append('rect').attr('id', 'rect2').attr('x', 50).attr('y', 10).attr('width', 150).attr('height', 200).attr('fill', shapes_colors[Math.floor(Math.random() * shapes_colors.length)]);
+                        d3.select('#rect2').on('click', function () { d3.select('#rect2').attr('fill', shapes_colors[Math.floor(Math.random() * shapes_colors.length)]); })
+                    </script>
+                </div>
+                <!--3 End of the third shape  -->
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-block skills" style="margin: -83px;">
+        <section class="portfolio-block skills">
+            <div class="container">
+                <div class="heading">
+                    <h2>Usefull links</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+
+                            <div class="card-header bg-transparent border-0">
+                                <a href="{{url_for('addbook')}}">
+                                    <i class="icon ion-plus"></i>
+                                </a>
+                            </div>
+
+                            <div class="card-body">
+                                <h3 class="card-title">Add a book</h3>
+                                <p class="card-text">Info about adding a new book</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+
+                            <div class="card-header bg-transparent border-0">
+                                <a href="{{url_for('allbooks')}}">
+                                    <i class="icon ion-ios-book-outline"></i>
+                                </a>
+                            </div>
+
+                            <div class="card-body">
+                                <h3 class="card-title">View all books</h3>
+                                <p class="card-text">Info about viewing all books</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card special-skill-item border-0">
+
+                            <div class="card-header bg-transparent border-0">
+                                <a href="{{url_for('addfile')}}">
+                                    <i class="icon ion-ios-home-outline"></i>
+                                </a>
+                            </div>
+
+                            <div class="card-body">
+                                <h3 class="card-title">Add a file</h3>
+                                <p class="card-text">Go to the page where you can add a new file</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+
+<section class="portfolio-block website gradient">
+    <div class="container">
+
+        <div class="heading">
+            <h2 style="margin: -3px;height: -2px;">
+                <strong>ABOUT</strong>&nbsp;the site</h2>
+        </div>
+    </div>
+
+    <div class="row" style="margin: 89px;">
+
+        <div class="col">
+            <p class="text-center" style="height: -3px;">Add here info about the site</p>
+        </div>
+
+    </div>
+</section>
+
+{% endblock content%}

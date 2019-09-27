@@ -9,6 +9,7 @@ verify_ssl = true
 flask = "*"
 black = "==19.3b0"
 pandas = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
