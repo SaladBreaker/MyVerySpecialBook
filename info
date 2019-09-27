@@ -19,6 +19,7 @@ câmpul „author”,
 buton „submit”
 
 - pe o altă pagină să afișeze, sub formă tabelară (HTML) înregistrările citite din tabela „books”.
+
 - să pună codul sursă pe github și să instaleze aplicația pe Heroku (platformă gratuită)
 
 info MyVerySpecialBookBot
