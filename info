@@ -11,14 +11,14 @@ Când se face click pe figuri, să își schimbe culoarea în mod aleator. DONE
 - pe o altă pagină să aibă o funcție de upload fișiere, bazată pe https://www.dropzonejs.com/.
 După upload, serverul să nu salveze fișierele (pentru simplitate). DONE
 
-- o bază de date PostgreSQL, cu un sigur tabel, numit „book”, cu trei coloane: „id”, „title”, „author”.
+- o bază de date PostgreSQL, cu un sigur tabel, numit „book”, cu trei coloane: „id”, „title”, „author”. DONE
 
-- pe o altă pagină să aibă un formular simplu de adăugare în „book”:
+- pe o altă pagină să aibă un formular simplu de adăugare în „book”: DONE
 câmpul „titlu”,
 câmpul „author”,
 buton „submit”
 
-- pe o altă pagină să afișeze, sub formă tabelară (HTML) înregistrările citite din tabela „books”.
+- pe o altă pagină să afișeze, sub formă tabelară (HTML) înregistrările citite din tabela „books”. DONE
 
 - să pună codul sursă pe github și să instaleze aplicația pe Heroku (platformă gratuită)
 
