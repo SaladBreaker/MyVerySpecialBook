@@ -31,7 +31,7 @@ def addbook():
     form = AddBookForm()
 
     if form.validate_on_submit():
-        book = Book(author=form.author.data, title=form.author.data)
+        book = Book(author=form.author.data, title=form.title.data)
 
         try:
             db.session.add(book)
