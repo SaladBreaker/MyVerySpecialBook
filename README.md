@@ -58,8 +58,8 @@ The static folder contains files generated with Bootstrap Studio for the visual 
 
 ## Future work
 - add more tests for the project
-- add a admin account that can delete the books entries from the database
-- store the file added in the addfile rout
+- add a admin account that can delete books from the database
+- store the file added in the addfile route
 - use a python library similar to dropzone lib to allow the files to be drag and drop on the page
 
 ## Heroku link
